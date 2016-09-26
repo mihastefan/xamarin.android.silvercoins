@@ -1,0 +1,13 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<resources>
+	<color name="primary">#009688</color>
+	<color name="secondary">#00796B</color>
+  <color name="terciary">#26A69A</color>
+	<color name="accent">#00BFA5</color>
+  <color name="list_item_header">#212121</color>
+  <color name="white">#FFFFFF</color>
+  <color name="fallback_accent">#B2DFDB</color>
+  <color name="fallback_error">#F44336</color>
+  <color name="dimmed_white">#ECECEC</color>
+  <color name="gray">#CCCCCC</color>
+</resources>

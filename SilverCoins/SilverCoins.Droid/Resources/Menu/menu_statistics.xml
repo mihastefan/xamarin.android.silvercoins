@@ -1,0 +1,18 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+  <item android:id="@+id/action_piechart"
+      android:title="Income &amp; Expenses"
+      app:showAsAction="never"
+      />
+    <item android:id="@+id/action_linechart"
+      android:title="Cash flow by type"
+      app:showAsAction="never"
+      />
+  <item android:id="@+id/action_barchart"
+      android:title="Balance"
+      app:showAsAction="never"
+      />
+
+</menu>

@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:minHeight="50dp">
+    <ImageView
+        android:id="@+id/account_icon"
+        android:layout_width="45dp"
+        android:layout_height="45dp"
+        android:paddingLeft="10dp"
+        android:layout_alignParentLeft="true"
+        android:layout_centerVertical="true" />
+    <TextView
+        android:id="@+id/account_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@+id/account_icon"
+        android:singleLine="true"
+        android:ellipsize="end"
+        android:text="Account name"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="10dp"
+        android:maxLength="30"
+        android:textColor="@color/list_item_header"
+        android:textSize="16sp"
+        android:fontFamily="sans-serif" />
+    <TextView
+        android:id="@+id/account_description"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@+id/account_icon"
+        android:layout_below="@+id/account_name"
+        android:singleLine="true"
+        android:ellipsize="end"
+        android:text="Account description"
+        android:layout_marginLeft="10dp"
+        android:textSize="12sp"
+        android:fontFamily="sans-serif-light" />
+    <TextView
+        android:id="@+id/account_balance"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:singleLine="true"
+        android:layout_marginRight="10dp"
+        android:fontFamily="sans-serif-light"
+        android:textSize="15sp"
+        android:textColor="@color/accent"
+        android:text="" />
+    <TextView
+        android:id="@+id/account_crated_date"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:singleLine="true"
+        android:layout_marginRight="10dp"
+        android:textSize="12sp"
+        android:fontFamily="sans-serif-light"
+        android:text=""
+        android:layout_below="@+id/account_balance" />
+</RelativeLayout>

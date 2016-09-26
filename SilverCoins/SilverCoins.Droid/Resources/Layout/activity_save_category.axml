@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <android.support.design.widget.AppBarLayout
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:id="@+id/toolbar_layout">
+        <include
+            layout="@layout/toolbar" />
+    </android.support.design.widget.AppBarLayout>
+    <android.support.design.widget.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="5dp">
+        <EditText
+            android:id="@+id/edit_category_name"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:hint="Name"
+            android:text=""
+            android:paddingLeft="5dp"
+            android:paddingRight="5dp" />
+    </android.support.design.widget.TextInputLayout>
+    <android.support.design.widget.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="5dp">
+        <EditText
+            android:id="@+id/edit_category_description"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:hint="Description"
+            android:text=""
+            android:paddingLeft="5dp"
+            android:paddingRight="5dp" />
+    </android.support.design.widget.TextInputLayout>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="5dp"
+        android:id="@+id/category_rel1">
+        <TextView
+            android:id="@+id/text_category_type"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/edit_account_init_amount"
+            android:text="Type"
+            android:textAppearance="?android:attr/textAppearanceMedium" />
+        <Spinner
+            android:id="@+id/spinner_category_type"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/edit_category_description"
+            android:layout_alignParentRight="true"
+            android:layout_toLeftOf="@+id/spinner_category_type" />
+    </RelativeLayout>
+  <RelativeLayout
+       android:layout_width="fill_parent"
+       android:layout_height="fill_parent"
+       android:layout_marginLeft="5dp"
+       android:layout_margin="5dp"
+       android:layout_below="@+id/category_rel1">
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Select icon"
+        android:id="@+id/text_category_icon"
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+    <GridView
+        android:id="@+id/gridviewCategory"
+        android:layout_below="@+id/text_category_icon"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:columnWidth="90dp"
+        android:numColumns="auto_fit"
+        android:verticalSpacing="5dp"
+        android:horizontalSpacing="5dp"
+        android:stretchMode="columnWidth"
+        android:gravity="center"
+        android:layout_marginTop="10dp" />
+  </RelativeLayout>
+</LinearLayout>
